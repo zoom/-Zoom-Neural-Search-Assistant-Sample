@@ -1,5 +1,4 @@
-const { callCerebrasAPI } = require('./cerebras');
-
+const { callCerebrasAPI } = require('../clients/cerebrasClient');
 async function handleZoomWebhook(req, res) {
   try {
     if (req.body.event === 'bot_notification') {
